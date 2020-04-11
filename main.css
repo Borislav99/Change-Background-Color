@@ -27,8 +27,8 @@ body {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 5rem;
-  padding: 1rem 5rem;
+  font-size: 3rem;
+  padding: .5rem 3rem;
   border-radius: 10rem;
   background: linear-gradient(
     to right bottom,
@@ -48,6 +48,12 @@ body {
 .container__link:active{
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width : 546px){
+ .container__link:link, .container__link:visited{
+    font-size: 5rem;
+  padding: 1rem 5rem;
+ }
 }
 /*--- Animations ---*/
 @keyframes moveInBottom {
